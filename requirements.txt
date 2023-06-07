@@ -1,0 +1,11 @@
+shortuuid
+pyyaml
+loguru
+uvicorn
+fastapi
+tortoise-orm[asyncmy]
+redis-om
+python-multipart
+python-jose[cryptography]
+pydantic[email]
+passlib[bcrypt]

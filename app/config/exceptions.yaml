@@ -1,0 +1,91 @@
+
+# ------------------------------------ 1xxxx ------------------------------------ #
+
+
+ParameterError:
+  status_code: 422
+  api_code: 10422
+  msg: Parameter verification error. Please check the submitted parameter information.
+  msg_zh: 参数校验错误, 请检查提交的参数信息.
+
+RateLimitError:
+  status_code: 240
+  api_code: 10429
+  msg: The request was too fast, please try again later.
+  msg_zh: 请求太快了, 请稍后重试.
+
+UnauthorizedError:
+  status_code: 240
+  api_code: 10401
+  msg: Unauthorized.
+  msg_zh: 未经许可.
+
+ForbiddenError:
+  status_code: 240
+  api_code: 10403
+  msg: ERROR Permission denied.
+  msg_zh: 权限不足.
+
+NotfoundError:
+  status_code: 404
+  api_code: 10404
+  msg: URL does not exist.
+  msg_zh: 请求地址无效.
+
+MethodNotAllowedError:
+  status_code: 240
+  api_code: 10405
+  msg: Method Not Allowed.
+  msg_zh: 请求方法不支持.
+
+InternalError:
+  status_code: 240
+  api_code: 10500
+  msg: System maintenance, please try again later.
+  msg_zh: 系统维护中, 请稍后再试.
+
+RequestAuthError:
+  status_code: 240
+  api_code: 10412
+  msg: Authentication failed.
+  msg_zh: 请求认证失败.
+
+
+# ------------------------------------ 2xxxx ------------------------------------ #
+
+
+TokenAuthError:
+  status_code: 401
+  api_code: 25100
+  msg: Login token is invalid, please log in again.
+  msg_zh: 错误的令牌格式.
+
+TokenOverdueError:
+  status_code: 401
+  api_code: 20102
+  msg: Login token is invalid, please log in again.
+  msg_zh: 登录令牌失效, 请重新登录.
+
+VerifyCodeError:
+  status_code: 401
+  api_code: 20103
+  msg: The verification code is incorrect. Please verify it again.
+  msg_zh: 验证码错误, 请重新验证.
+
+RequestTimeoutError:
+  status_code: 408
+  api_code: 20104
+  msg: Request timed out, please refresh the page.
+  msg_zh: 请求超时, 请刷新页面.
+
+FileTooLargeError:
+  status_code: 413
+  api_code: 20105
+  msg: Upload file too large.
+  msg_zh: 上传文件过大.
+
+FileFomatError:
+  status_code: 413
+  api_code: 20106
+  msg: The uploaded file format is incorrect.
+  msg_zh: 上传文件格式错误.
